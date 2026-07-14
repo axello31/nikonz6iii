@@ -125,8 +125,8 @@ export const notes: NoteMeta[] = [
     slug: "suluklu-gol-kamp-vlog-planlamasi",
     title: "Sülüklü Göl Kamp Vlog Planlaması (Director's Cut)",
     categoryIds: ["vlog-onerileri"],
-    summary: "5 bölümlük tam senaryo (sahne sahne plan + müzik giriş/çıkış notları) ve FCP'de kuş sesi pan/reverb/ducking ile ses tasarımı kılavuzu.",
-    tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut", "müzik", "asmr", "ses efektleri", "reverb", "pan", "ducking", "space designer"],
+    summary: "5 bölümlük tam senaryo, müzik giriş/çıkış notları ve FCP'de kuş sesi (pan/reverb/ducking) + ateş sesi (EQ/limiter) ses tasarımı kılavuzları.",
+    tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut", "müzik", "asmr", "ses efektleri", "reverb", "pan", "ducking", "space designer", "channel eq", "limiter", "ateş sesi"],
   },
   {
     slug: "ekipmanlarim",
