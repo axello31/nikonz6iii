@@ -31,13 +31,13 @@ export function Home() {
         </Link>
 
         <Link
-          to="/notes/rode-dji-mikrofon-ayarlari"
+          to="/shortcuts"
           className="mt-3 flex items-center gap-4 bg-nikon-panel border border-nikon-line rounded-2xl px-5 py-4 active:scale-[0.98] active:border-yellow-300/40 transition"
         >
-          <span className="text-3xl">🎙️</span>
+          <span className="text-3xl">⭐</span>
           <div className="min-w-0">
-            <div className="text-[15px] font-extrabold text-white">Rode ve DJI Mikrofon Ayarları</div>
-            <div className="text-[12px] text-neutral-400">Kamp vlogu için ses kurulum sıralaması</div>
+            <div className="text-[15px] font-extrabold text-white">Sık Kullanılan Kısayollar</div>
+            <div className="text-[12px] text-neutral-400">Hızlı erişim listen</div>
           </div>
           <span className="ml-auto text-neutral-600 text-xl">›</span>
         </Link>
@@ -56,6 +56,14 @@ export function Home() {
                 <div className="text-[11px] text-neutral-400 leading-snug">{c.description}</div>
               </Link>
             ))}
+            <Link
+              to="/notes/rode-dji-mikrofon-ayarlari"
+              className="bg-nikon-panel border border-nikon-line rounded-2xl px-4 py-4 flex flex-col gap-2 active:scale-[0.97] active:border-yellow-300/40 transition"
+            >
+              <span className="text-2xl">🎙️</span>
+              <div className="text-[13.5px] font-bold text-white leading-tight">Rode ve DJI Mikrofon Ayarları</div>
+              <div className="text-[11px] text-neutral-400 leading-snug">Kamp vlogu için ses kurulum sıralaması</div>
+            </Link>
           </div>
         </div>
       </div>

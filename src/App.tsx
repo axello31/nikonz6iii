@@ -4,6 +4,7 @@ import { ManualHome } from "./pages/ManualHome";
 import { ManualSectionPage } from "./pages/ManualSection";
 import { CategoryPage } from "./pages/Category";
 import { NotePage } from "./pages/Note";
+import { ShortcutsPage } from "./pages/Shortcuts";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/manual/:doc/:id" element={<ManualSectionPage />} />
         <Route path="/category/:id" element={<CategoryPage />} />
         <Route path="/notes/:slug" element={<NotePage />} />
+        <Route path="/shortcuts" element={<ShortcutsPage />} />
       </Routes>
     </HashRouter>
   );
