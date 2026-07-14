@@ -65,10 +65,10 @@ export const notes: NoteMeta[] = [
   },
   {
     slug: "basamakli-odak-makro",
-    title: "Basamaklı Odak Kaydırmalı Makro Çekim",
-    categoryIds: ["z6iii"],
-    summary: "Focus Shift Shooting adım adım kurulum ve Photoshop'ta focus stacking birleştirme.",
-    tags: ["makro", "focus stacking", "photoshop", "odak kaydırma"],
+    title: "Flaşlı Makro Çekimlerde Odak Kaydırma (Focus Stacking) ve Yapılandırma Rehberi",
+    categoryIds: ["z6iii", "sb900-flas"],
+    summary: "SB-900 + softbox ışık kurulumu, kamera/menü ayarları, senaryo bazlı çekim sayısı/adım genişliği ve NX Studio/Photoshop'ta birleştirme.",
+    tags: ["makro", "focus stacking", "photoshop", "odak kaydırma", "flaş", "sb-900", "softbox", "nx studio"],
   },
   {
     slug: "tilt-up-reveal-shot",
