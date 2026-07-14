@@ -5,6 +5,7 @@ import { OriginalPages } from "../components/OriginalPages";
 import { MenuPath } from "../components/MenuPath";
 import { loadManual } from "../lib/manual";
 import { tokenizeManualText } from "../lib/manualInline";
+import { manualNotes } from "../data/manualNotes";
 import type { ManualSection as ManualSectionType } from "../types";
 
 function findSectionForPage(sections: ManualSectionType[], page: number): ManualSectionType | undefined {
@@ -146,6 +147,19 @@ export function ManualSectionPage() {
                 <ParagraphWithRefs key={i} text={p} doc={doc as "um" | "rg"} sections={sections ?? []} />
               ))}
             </div>
+
+            {manualNotes[section.id] && manualNotes[section.id].length > 0 && (
+              <div className="mt-5 bg-yellow-300/8 border border-yellow-300/30 rounded-2xl px-4 py-3.5">
+                <div className="text-[11px] font-bold uppercase tracking-wider text-yellow-300 mb-1.5 flex items-center gap-1.5">
+                  <span>💡</span> İpucu
+                </div>
+                {manualNotes[section.id].map((note, i) => (
+                  <p key={i} className="text-[13.5px] text-yellow-100/90 leading-relaxed">
+                    {note}
+                  </p>
+                ))}
+              </div>
+            )}
 
             <div className="flex gap-2 mt-8 pt-4 border-t border-nikon-line">
               {prev && (
