@@ -27,7 +27,7 @@
 `[MÜZİK: YOK - Sadece Kumaş ve Ayak Sesi]`
 
 * **Plan 1 (3 sn) - Geniş:** (Nikon, Tripod, 35mm, f/4). Aslan odanın diğer ucundan koşarak gelir.
-* **Plan 2 (5 sn) - Yakın:** (Nikon, Elde, 50mm, f/2.8, **60fps**). Aslan'ın minik elleri yavaş çekimde fenerini çantaya koyar.
+* **Plan 2 (5 sn) - Yakın:** (Nikon, Elde, 50mm, f/2.8, **50/100 fps**). Aslan'ın minik elleri yavaş çekimde fenerini çantaya koyar.
 
 ### Sahne 1.4: Dexter'ın Tasması ve Yola Çıkış (Toplam 10 sn)
 
@@ -93,7 +93,7 @@
 
 `[MÜZİK: YOK - Sadece Ağır Çekim Nefes ve Tasma Sesi]`
 
-* **Plan 1 (15 sn) - Pan Takip:** (Tamron, Tripod, 200mm, f/2.8, MF, **60fps**, Dexter'ın tasmasında DJI Mic). Dexter'ın ormanın derinliklerine doğru koşması. 200mm sıkıştırmasıyla rüya gibi bir görsellik.
+* **Plan 1 (15 sn) - Pan Takip:** (Tamron, Tripod, 200mm, f/2.8, MF, **50/100 fps**, Dexter'ın tasmasında DJI Mic). Dexter'ın ormanın derinliklerine doğru koşması. 200mm sıkıştırmasıyla rüya gibi bir görsellik.
 
 ### Sahne 3.3: Meditatif Kesit 3 - Suyun Ritmi (Toplam 20 sn)
 
@@ -152,7 +152,7 @@
 * **Plan 1 (9 sn) - Sis (Drone):** (DJI Air 2S, 5.4K 30fps). Gölün üzerindeki sabah sisinin içinden pürüzsüz geçiş.
 * **Plan 2 (6 sn) - Fermuar:** (Nikon, Elde içeriden dışarıya, 24mm, f/4). Müzik susar. Çadır fermuarı yavaşça açılır ("Zzıırrp").
 * **Plan 3 (5 sn) - Su Kaynaması:** (Nikon, Tripod, 50mm, f/4, DJI Mic). Suyun fokurdama sesi.
-* **Plan 4 (10 sn) - Kahve Dökülüşü:** (Nikon, Tripod, 70mm, f/2.8, **60fps**). Kahvenin dökülüşü, buhar.
+* **Plan 4 (10 sn) - Kahve Dökülüşü:** (Nikon, Tripod, 70mm, f/2.8, **50/100 fps**). Kahvenin dökülüşü, buhar.
 
 ### Sahne 5.3: İz Bırakmamak ve Veda (Toplam 15 sn)
 
