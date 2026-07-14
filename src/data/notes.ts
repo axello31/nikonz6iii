@@ -14,6 +14,7 @@ import adobePremiereRehberi from "../content/notes/adobe-premiere-kurgu-rehberi.
 import redLutEkleme from "../content/notes/red-lut-ekleme.md?raw";
 import sulukluGolKampVlog from "../content/notes/suluklu-gol-kamp-vlog-planlamasi.md?raw";
 import ekipmanlarim from "../content/notes/ekipmanlarim.md?raw";
+import gimbalAfAyarlari from "../content/notes/gimbal-af-ayarlari-kamera-yapilandirma.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -30,6 +31,7 @@ export const noteContent: Record<string, string> = {
   "red-lut-ekleme": redLutEkleme,
   "suluklu-gol-kamp-vlog-planlamasi": sulukluGolKampVlog,
   ekipmanlarim: ekipmanlarim,
+  "gimbal-af-ayarlari-kamera-yapilandirma": gimbalAfAyarlari,
 };
 
 export const notes: NoteMeta[] = [
@@ -130,6 +132,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["ekipmanlarim"],
     summary: "Gövdeler, lensler, drone, rig/sabitleme, ışık/stüdyo, ses sistemleri, hafıza kartları ve alınacaklar listesi.",
     tags: ["ekipman", "gear", "lens", "rig", "liste"],
+  },
+  {
+    slug: "gimbal-af-ayarlari-kamera-yapilandirma",
+    title: "Gimbal ile AF Ayarları ve Kamera Yapılandırma Rehberi",
+    categoryIds: ["dji-rs5"],
+    summary: "AF-C/AF-F mantığı, g5 AF Hızı & g6 AF İzleme Hassasiyeti, senaryo bazlı AF alan modu/konu algılama ve RS5 tekerlek/back-button ipuçları.",
+    tags: ["gimbal", "af-c", "af-f", "af hızı", "izleme hassasiyeti", "rs5", "konu algılama"],
   },
 ];
 
