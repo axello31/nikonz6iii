@@ -15,6 +15,7 @@ import redLutEkleme from "../content/notes/red-lut-ekleme.md?raw";
 import sulukluGolKampVlog from "../content/notes/suluklu-gol-kamp-vlog-planlamasi.md?raw";
 import ekipmanlarim from "../content/notes/ekipmanlarim.md?raw";
 import gimbalAfAyarlari from "../content/notes/gimbal-af-ayarlari-kamera-yapilandirma.md?raw";
+import sabitKadrajKlon from "../content/notes/sabit-kadraj-coklu-klon-videosu.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -32,6 +33,7 @@ export const noteContent: Record<string, string> = {
   "suluklu-gol-kamp-vlog-planlamasi": sulukluGolKampVlog,
   ekipmanlarim: ekipmanlarim,
   "gimbal-af-ayarlari-kamera-yapilandirma": gimbalAfAyarlari,
+  "sabit-kadraj-coklu-klon-videosu": sabitKadrajKlon,
 };
 
 export const notes: NoteMeta[] = [
@@ -139,6 +141,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["dji-rs5"],
     summary: "AF-C/AF-F mantığı, g5 AF Hızı & g6 AF İzleme Hassasiyeti, senaryo bazlı AF alan modu/konu algılama ve RS5 tekerlek/back-button ipuçları.",
     tags: ["gimbal", "af-c", "af-f", "af hızı", "izleme hassasiyeti", "rs5", "konu algılama", "rack focus", "odak geçişi"],
+  },
+  {
+    slug: "sabit-kadraj-coklu-klon-videosu",
+    title: "Sabit Kadrajda Çoklu Klon Videosu Yapımı ve FCP ile Kurgu",
+    categoryIds: ["vlog-onerileri"],
+    summary: "Tripod + manuel pozlama ile aynı özneyi 5 farklı konumda kaydedip Final Cut Pro'da Draw Mask ile tek karede birleştirme rehberi.",
+    tags: ["klonlama", "cloning", "fcp", "draw mask", "sabit kadraj", "final cut pro"],
   },
 ];
 

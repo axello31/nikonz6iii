@@ -5,7 +5,10 @@ import { categories } from "../data/categories";
 export function Home() {
   return (
     <div className="flex-1 bg-nikon-black">
-      <div className="max-w-2xl mx-auto px-4 pt-6 pb-10">
+      <div
+        className="max-w-2xl mx-auto px-4 pt-6 pb-10"
+        style={{ paddingTop: "calc(env(safe-area-inset-top) + 1.5rem)" }}
+      >
         <div className="flex flex-col items-center text-center mb-6">
           <img
             src={`${import.meta.env.BASE_URL}icons/nikon-logo.png`}

@@ -31,7 +31,7 @@ export const categories: Category[] = [
   },
   {
     id: "vlog-onerileri",
-    title: "Vlog Önerileri",
+    title: "Video Çekim Önerileri",
     emoji: "🎬",
     description: "Çekim teknikleri, poz ve sahne planlama",
     accent: "from-yellow-400 to-orange-400",
