@@ -125,8 +125,8 @@ export const notes: NoteMeta[] = [
     slug: "suluklu-gol-kamp-vlog-planlamasi",
     title: "Sülüklü Göl Kamp Vlog Planlaması (Director's Cut)",
     categoryIds: ["vlog-onerileri"],
-    summary: "5 bölümlük tam senaryo: hazırlık, yolculuk, kamp kurulumu, akşam ateşi ve sabah vedası için sahne sahne plan listesi.",
-    tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut"],
+    summary: "5 bölümlük tam senaryo: hazırlık, yolculuk, kamp kurulumu, akşam ateşi ve sabah vedası için sahne sahne plan + müzik giriş/çıkış notları.",
+    tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut", "müzik", "asmr"],
   },
   {
     slug: "ekipmanlarim",
