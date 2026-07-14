@@ -18,6 +18,7 @@ import gimbalAfAyarlari from "../content/notes/gimbal-af-ayarlari-kamera-yapilan
 import sabitKadrajKlon from "../content/notes/sabit-kadraj-coklu-klon-videosu.md?raw";
 import efektEklemeAyarlari from "../content/notes/efekt-ekleme-ayarlari.md?raw";
 import hizRampasiSpeedRamp from "../content/notes/hiz-rampasi-speed-ramp.md?raw";
+import whipPanCekimi from "../content/notes/whip-pan-cekimi.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -38,6 +39,7 @@ export const noteContent: Record<string, string> = {
   "sabit-kadraj-coklu-klon-videosu": sabitKadrajKlon,
   "efekt-ekleme-ayarlari": efektEklemeAyarlari,
   "hiz-rampasi-speed-ramp": hizRampasiSpeedRamp,
+  "whip-pan-cekimi": whipPanCekimi,
 };
 
 export const notes: NoteMeta[] = [
@@ -166,6 +168,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["video-yazilim"],
     summary: "FCP'de Blade Speed, Transition Handles ile akıcı hızlan-yavaşla geçişi ve Directional Blur ile motion blur ekleme adımları.",
     tags: ["speed ramp", "hız rampası", "blade speed", "fcp", "transition handles", "motion blur", "orbit"],
+  },
+  {
+    slug: "whip-pan-cekimi",
+    title: "Whip-Pan Çekimi (Sağa Kırbaç Hareketi)",
+    categoryIds: ["vlog-onerileri"],
+    summary: "Görünmez sahne geçişi için whip-pan tekniği: çekim adımları ve RS5'te Sport Mode / PF+Fast+Low Deadband ayarları, M1/M2 profil önerisi.",
+    tags: ["whip pan", "kırbaç hareketi", "gimbal", "rs5", "sahne geçişi", "pan follow", "deadband"],
   },
 ];
 
