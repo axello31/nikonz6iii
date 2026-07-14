@@ -16,6 +16,7 @@ import sulukluGolKampVlog from "../content/notes/suluklu-gol-kamp-vlog-planlamas
 import ekipmanlarim from "../content/notes/ekipmanlarim.md?raw";
 import gimbalAfAyarlari from "../content/notes/gimbal-af-ayarlari-kamera-yapilandirma.md?raw";
 import sabitKadrajKlon from "../content/notes/sabit-kadraj-coklu-klon-videosu.md?raw";
+import efektEklemeAyarlari from "../content/notes/efekt-ekleme-ayarlari.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -34,6 +35,7 @@ export const noteContent: Record<string, string> = {
   ekipmanlarim: ekipmanlarim,
   "gimbal-af-ayarlari-kamera-yapilandirma": gimbalAfAyarlari,
   "sabit-kadraj-coklu-klon-videosu": sabitKadrajKlon,
+  "efekt-ekleme-ayarlari": efektEklemeAyarlari,
 };
 
 export const notes: NoteMeta[] = [
@@ -125,8 +127,8 @@ export const notes: NoteMeta[] = [
     slug: "suluklu-gol-kamp-vlog-planlamasi",
     title: "Sülüklü Göl Kamp Vlog Planlaması (Director's Cut)",
     categoryIds: ["vlog-onerileri"],
-    summary: "5 bölümlük tam senaryo, müzik giriş/çıkış notları ve FCP'de kuş sesi (pan/reverb/ducking) + ateş sesi (EQ/limiter) ses tasarımı kılavuzları.",
-    tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut", "müzik", "asmr", "ses efektleri", "reverb", "pan", "ducking", "space designer", "channel eq", "limiter", "ateş sesi"],
+    summary: "5 bölümlük tam senaryo: hazırlık, yolculuk, kamp kurulumu, akşam ateşi ve sabah vedası için sahne sahne plan + müzik giriş/çıkış notları.",
+    tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut", "müzik", "asmr"],
   },
   {
     slug: "ekipmanlarim",
@@ -148,6 +150,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["vlog-onerileri"],
     summary: "Tripod + manuel pozlama ile aynı özneyi 5 farklı konumda kaydedip Final Cut Pro'da Draw Mask ile tek karede birleştirme rehberi.",
     tags: ["klonlama", "cloning", "fcp", "draw mask", "sabit kadraj", "final cut pro"],
+  },
+  {
+    slug: "efekt-ekleme-ayarlari",
+    title: "Efekt Ekleme Ayarları",
+    categoryIds: ["video-yazilim"],
+    summary: "FCP'de kuş sesi için pan/reverb/ducking (Space Designer, Range Selection) ve ateş sesi için Channel EQ/Limiter ayarları.",
+    tags: ["ses efektleri", "reverb", "pan", "ducking", "space designer", "channel eq", "limiter", "ateş sesi", "kuş sesi", "fcp"],
   },
 ];
 
