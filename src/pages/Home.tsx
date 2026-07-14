@@ -30,19 +30,7 @@ export function Home() {
           <span className="ml-auto text-nikon-black/50 text-xl">›</span>
         </Link>
 
-        <Link
-          to="/shortcuts"
-          className="mt-3 flex items-center gap-4 bg-nikon-panel border border-nikon-line rounded-2xl px-5 py-4 active:scale-[0.98] active:border-yellow-300/40 transition"
-        >
-          <span className="text-3xl">⭐</span>
-          <div className="min-w-0">
-            <div className="text-[15px] font-extrabold text-white">Sık Kullanılan Kısayollar</div>
-            <div className="text-[12px] text-neutral-400">Hızlı erişim listen</div>
-          </div>
-          <span className="ml-auto text-neutral-600 text-xl">›</span>
-        </Link>
-
-        <div className="mt-8">
+        <div className="mt-6">
           <h2 className="text-[12px] font-bold uppercase tracking-wider text-neutral-500 px-1 mb-3">Notlarım</h2>
           <div className="grid grid-cols-2 gap-3">
             {categories.map((c) => (
@@ -63,6 +51,14 @@ export function Home() {
               <span className="text-2xl">🎙️</span>
               <div className="text-[13.5px] font-bold text-white leading-tight">Rode ve DJI Mikrofon Ayarları</div>
               <div className="text-[11px] text-neutral-400 leading-snug">Kamp vlogu için ses kurulum sıralaması</div>
+            </Link>
+            <Link
+              to="/shortcuts"
+              className="bg-nikon-panel border border-nikon-line rounded-2xl px-4 py-4 flex flex-col gap-2 active:scale-[0.97] active:border-yellow-300/40 transition"
+            >
+              <span className="text-2xl">⭐</span>
+              <div className="text-[13.5px] font-bold text-white leading-tight">Sık Kullanılan Kısayollar</div>
+              <div className="text-[11px] text-neutral-400 leading-snug">Hızlı erişim listen</div>
             </Link>
           </div>
         </div>
