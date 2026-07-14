@@ -138,7 +138,7 @@ export const notes: NoteMeta[] = [
     title: "Gimbal ile AF Ayarları ve Kamera Yapılandırma Rehberi",
     categoryIds: ["dji-rs5"],
     summary: "AF-C/AF-F mantığı, g5 AF Hızı & g6 AF İzleme Hassasiyeti, senaryo bazlı AF alan modu/konu algılama ve RS5 tekerlek/back-button ipuçları.",
-    tags: ["gimbal", "af-c", "af-f", "af hızı", "izleme hassasiyeti", "rs5", "konu algılama"],
+    tags: ["gimbal", "af-c", "af-f", "af hızı", "izleme hassasiyeti", "rs5", "konu algılama", "rack focus", "odak geçişi"],
   },
 ];
 

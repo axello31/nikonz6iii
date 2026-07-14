@@ -84,6 +84,18 @@ Nikon Z6 III video modunda tek bir AF moduyla her işi çözemezsiniz. Doğru se
 * **Ne Zaman Kullanılır?:** Kadrajda belirli bir insan veya canlı özne olmadığında, sadece ortamı ve coğrafyayı gimbal akışıyla kaydetmek istediğinizde.
 * **Nasıl Çalışır?:** Doğa ve manzara çekimlerinde yapay zekanın açık kalması risklidir; kamera bir ağaç dalını veya kayayı insana/araca benzetip odağı ileri geri fırlatabilir (Focus Hunting). Konu algılamayı kapatıp odağı Geniş Alan (S) ile ekranın ortasına sabitlediğinizde, kamera sadece kadrajın merkezini net tutar ve kusursuz, kararlı bir doğa akıcılığı elde edersiniz. Eğer derinlik mesafesi milim değişmeyecekse odağı tamamen kilitleyip MF (Manuel) moda geçmek de en güvenli yoldur.
 
+### Senaryo D: Sinematik Objeden Objeye Odak Geçişi (Rack Focus / Farklı Nesneler Arası Geçiş)
+
+* **Kullanım Amacı:** Tek bir nesnede takılı kalmak yerine, hikaye anlatımı gereği odağı ön plandaki bir nesneden (örn. kamp bardağından) arka plandaki insana (veya tam tersi) pürüzsüzce kaydırmak.
+* **Tüm Ayarların Yeniden Yapılandırılması:** Bu senaryoda kameranın "tek bir nesneye sadık kalma" ve "odağı çivileme" zekasını tamamen tersine çevirmemiz gerekir. Ayarları şu şekilde değiştiriyoruz:
+    * **AF Modu:** AF-C (Sürekli Çalışma)
+    * **AF Alan Modu:** Tek Noktalı AF (Single-Point AF) veya doğrudan dokunmatik ekran kullanımı.
+    * **Konu Algılama:** Konu Algılama Kapalı (yapay zekanın kendi kafasına göre insana kilitlenmesini engellemek için).
+    * **g5: AF Hızı:** −3 veya −4 (odağın sertçe zıplamasını engellemek, sinematik ve yavaş bir kayış elde etmek için).
+    * **g6: AF İzleme Hassasiyeti:** 1 veya 2 (Hızlı Tepki / Responsive). Normalde gimbalda bunu yüksek tutuyorduk ancak nesneler arası geçiş yapacağımız için kameranın yeni gösterdiğimiz hedefe anında (ama yavaş bir hızla) ikna olması gerekir.
+    * **AF Konu Algılanmadığında:** [ON] (Açık - Sürekli Ara). Kamera eski nesneyi bırakıp yeni nesneyi aramaya açık olmalıdır.
+* **Nasıl Çalışır?:** Gimbalı sabit tutarken veya yavaşça yana kaydırırken (parallax), Z6 III'ün dokunmatik ekranından arka plandaki yeni hedefinize parmağınızla bir kez dokunursunuz. Kamera verdiğiniz hızlı tepki (responsive) ayarı sayesinde yeni nesneyi hemen kabul eder ama belirlediğiniz −3 yavaş hızıyla odağı adeta süzülerek yeni nesneye taşır.
+
 **Menüden Yer Tarifi (AF Alan Modu ve Konu Algılama):**
 
 1. **MENU** > **VİDEO KAYIT MENÜSÜ** sekmesine gidin.
