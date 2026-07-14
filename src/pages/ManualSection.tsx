@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Header } from "../components/Header";
+import { OriginalPages } from "../components/OriginalPages";
 import { loadManual } from "../lib/manual";
+import { tokenizeManualText } from "../lib/manualInline";
 import type { ManualSection as ManualSectionType } from "../types";
-
-const REF_RE = /\(\s*0\s+(\d{1,4})\s*\)/g;
 
 function findSectionForPage(sections: ManualSectionType[], page: number): ManualSectionType | undefined {
   let best: ManualSectionType | undefined;
@@ -25,36 +25,46 @@ function ParagraphWithRefs({
   doc: "um" | "rg";
   sections: ManualSectionType[];
 }) {
-  const parts: (string | { page: number })[] = [];
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
-  const re = new RegExp(REF_RE);
-  while ((match = re.exec(text))) {
-    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
-    parts.push({ page: parseInt(match[1], 10) });
-    lastIndex = match.index + match[0].length;
-  }
-  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  const tokens = tokenizeManualText(text);
 
   return (
     <p>
-      {parts.map((part, i) => {
-        if (typeof part === "string") return <span key={i}>{part}</span>;
-        const target = findSectionForPage(sections, part.page);
-        if (!target) return <span key={i}>(s. {part.page})</span>;
+      {tokens.map((token, i) => {
+        if (token.kind === "text") return <span key={i}>{token.value}</span>;
+        if (token.kind === "step") {
+          return (
+            <span key={i} className="text-yellow-300 font-bold mx-0.5">
+              {token.digit}
+            </span>
+          );
+        }
+        if (token.kind === "term") {
+          return (
+            <span
+              key={i}
+              className="inline-block bg-yellow-300/12 text-yellow-200 font-semibold px-1.5 py-0.5 rounded-md mx-0.5 text-[0.93em]"
+            >
+              {token.value}
+            </span>
+          );
+        }
+        const target = findSectionForPage(sections, token.page);
+        if (!target) return <span key={i}>(s. {token.page})</span>;
         return (
-          <Link
-            key={i}
-            to={`/manual/${doc}/${target.id}`}
-            className="text-yellow-300 font-semibold whitespace-nowrap"
-          >
-            (→ s.{part.page})
+          <Link key={i} to={`/manual/${doc}/${target.id}`} className="text-sky-300 font-semibold whitespace-nowrap">
+            (→ s.{token.page})
           </Link>
         );
       })}
     </p>
   );
 }
+
+const TABLE_HEADER_PAIRS = [
+  ["seçenek", "tanım"],
+  ["ayar", "açıklama"],
+  ["menü öğesi", "açıklama"],
+];
 
 export function ManualSectionPage() {
   const { doc, id } = useParams<{ doc: "um" | "rg"; id: string }>();
@@ -78,13 +88,21 @@ export function ManualSectionPage() {
     const listStart = /^(\d{1,2}[.)]|[•*-])\s/;
     const paras: string[] = [];
     let current = "";
-    for (const line of lines) {
+    for (let idx = 0; idx < lines.length; idx++) {
+      const line = lines[idx];
+      const lower = line.toLowerCase();
+      const next = lines[idx + 1]?.toLowerCase();
+      const isTableHeader = TABLE_HEADER_PAIRS.some(([a, b]) => lower === a && next === b);
+      if (isTableHeader) {
+        idx++; // skip the paired header line too
+        continue;
+      }
       const startsNewPara = listStart.test(line) || current === "";
       if (startsNewPara) {
         if (current) paras.push(current);
         current = line;
       } else {
-        current += (/[:.]$/.test(current) ? " " : " ") + line;
+        current += " " + line;
       }
       if (/:$/.test(line)) {
         paras.push(current);
@@ -120,6 +138,8 @@ export function ManualSectionPage() {
               Sayfa {section.page_start}
               {section.page_end !== section.page_start ? `–${section.page_end}` : ""} · {docLabel}
             </div>
+
+            <OriginalPages doc={doc as "um" | "rg"} pageStart={section.page_start} pageEnd={section.page_end} />
 
             {paragraphs.length === 0 && (
               <p className="text-neutral-500 text-sm italic">

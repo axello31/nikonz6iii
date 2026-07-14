@@ -30,6 +30,18 @@ export function Home() {
           <span className="ml-auto text-nikon-black/50 text-xl">›</span>
         </Link>
 
+        <Link
+          to="/notes/rode-dji-mikrofon-ayarlari"
+          className="mt-3 flex items-center gap-4 bg-nikon-panel border border-nikon-line rounded-2xl px-5 py-4 active:scale-[0.98] active:border-yellow-300/40 transition"
+        >
+          <span className="text-3xl">🎙️</span>
+          <div className="min-w-0">
+            <div className="text-[15px] font-extrabold text-white">Rode ve DJI Mikrofon Ayarları</div>
+            <div className="text-[12px] text-neutral-400">Kamp vlogu için ses kurulum sıralaması</div>
+          </div>
+          <span className="ml-auto text-neutral-600 text-xl">›</span>
+        </Link>
+
         <div className="mt-8">
           <h2 className="text-[12px] font-bold uppercase tracking-wider text-neutral-500 px-1 mb-3">Notlarım</h2>
           <div className="grid grid-cols-2 gap-3">

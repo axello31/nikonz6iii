@@ -13,6 +13,7 @@ import yesilPerdeRehberi from "../content/notes/yesil-perde-rehberi.md?raw";
 import adobePremiereRehberi from "../content/notes/adobe-premiere-kurgu-rehberi.md?raw";
 import redLutEkleme from "../content/notes/red-lut-ekleme.md?raw";
 import sulukluGolKampVlog from "../content/notes/suluklu-gol-kamp-vlog-planlamasi.md?raw";
+import ekipmanlarim from "../content/notes/ekipmanlarim.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -28,6 +29,7 @@ export const noteContent: Record<string, string> = {
   "adobe-premiere-kurgu-rehberi": adobePremiereRehberi,
   "red-lut-ekleme": redLutEkleme,
   "suluklu-gol-kamp-vlog-planlamasi": sulukluGolKampVlog,
+  ekipmanlarim: ekipmanlarim,
 };
 
 export const notes: NoteMeta[] = [
@@ -121,6 +123,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["vlog"],
     summary: "5 bölümlük tam senaryo: hazırlık, yolculuk, kamp kurulumu, akşam ateşi ve sabah vedası için sahne sahne plan listesi.",
     tags: ["vlog planlama", "senaryo", "kamp", "sahne listesi", "director's cut"],
+  },
+  {
+    slug: "ekipmanlarim",
+    title: "Fotoğraf-Video Ekipmanlarım",
+    categoryIds: ["ekipmanlarim"],
+    summary: "Gövdeler, lensler, drone, rig/sabitleme, ışık/stüdyo, ses sistemleri, hafıza kartları ve alınacaklar listesi.",
+    tags: ["ekipman", "gear", "lens", "rig", "liste"],
   },
 ];
 
