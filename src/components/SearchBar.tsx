@@ -79,14 +79,10 @@ export function SearchBar() {
                 className="block px-4 py-3 border-b border-nikon-line last:border-0 active:bg-nikon-line/60"
               >
                 <div className="flex items-center gap-2 mb-0.5">
-                  <span
-                    className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-                      r.kind === "manual" ? "bg-neutral-600/40 text-neutral-300" : "bg-yellow-300/15 text-yellow-300"
-                    }`}
-                  >
+                  <span className="text-[9.5px] font-bold px-1.5 py-0.5 rounded bg-neutral-600/40 text-neutral-400 shrink-0">
                     {r.kind === "manual" ? "KILAVUZ" : "NOT"}
                   </span>
-                  <span className="text-[11px] text-neutral-500 truncate">{r.breadcrumb}</span>
+                  <span className="text-[11.5px] font-bold text-yellow-300 truncate">{r.breadcrumb}</span>
                 </div>
                 <div className="text-[14px] font-semibold text-white truncate">{r.title}</div>
                 <div className="text-[12px] text-neutral-400 line-clamp-2 mt-0.5">{r.snippet}</div>

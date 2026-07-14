@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Header } from "../components/Header";
 import { OriginalPages } from "../components/OriginalPages";
+import { MenuPath } from "../components/MenuPath";
 import { loadManual } from "../lib/manual";
 import { tokenizeManualText } from "../lib/manualInline";
 import type { ManualSection as ManualSectionType } from "../types";
@@ -123,14 +124,7 @@ export function ManualSectionPage() {
         {section && (
           <>
             {section.breadcrumb.length > 0 && (
-              <div className="text-[11px] text-neutral-500 mb-3 flex flex-wrap gap-1">
-                {section.breadcrumb.map((b, i) => (
-                  <span key={i}>
-                    {b}
-                    {i < section.breadcrumb.length - 1 && <span className="mx-1 text-neutral-700">›</span>}
-                  </span>
-                ))}
-              </div>
+              <MenuPath path={["MENU", ...section.breadcrumb]} className="mb-3" />
             )}
 
             <h1 className="text-xl font-extrabold text-white leading-tight mb-1">{section.title}</h1>

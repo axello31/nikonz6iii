@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
+import { MenuPath } from "../components/MenuPath";
 import { shortcuts } from "../data/shortcuts";
 
 export function ShortcutsPage() {
@@ -20,12 +21,13 @@ export function ShortcutsPage() {
               <Link
                 key={s.id}
                 to={s.href}
-                className="flex items-center gap-4 bg-nikon-panel border border-nikon-line rounded-2xl px-4 py-4 active:scale-[0.98] active:border-yellow-300/40 transition"
+                className="flex items-start gap-4 bg-nikon-panel border border-nikon-line rounded-2xl px-4 py-4 active:scale-[0.98] active:border-yellow-300/40 transition"
               >
-                <span className="text-2xl">{s.emoji}</span>
-                <div className="min-w-0">
+                <span className="text-2xl shrink-0 mt-0.5">{s.emoji}</span>
+                <div className="min-w-0 flex-1">
+                  <MenuPath path={s.menuPath} className="mb-1" />
                   <div className="text-[14.5px] font-bold text-white leading-tight">{s.title}</div>
-                  {s.subtitle && <div className="text-[12px] text-neutral-400 leading-snug mt-0.5">{s.subtitle}</div>}
+                  {s.subtitle && <div className="text-[12px] text-neutral-400 leading-snug mt-1">{s.subtitle}</div>}
                 </div>
                 <span className="ml-auto text-neutral-600 text-xl shrink-0">›</span>
               </Link>
