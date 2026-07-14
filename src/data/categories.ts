@@ -30,11 +30,18 @@ export const categories: Category[] = [
     accent: "from-neutral-400 to-neutral-500",
   },
   {
-    id: "vlog",
-    title: "Video & Vlog Önerileri",
+    id: "vlog-onerileri",
+    title: "Vlog Önerileri",
     emoji: "🎬",
-    description: "Ses, kurgu, renk ve çekim tavsiyeleri",
+    description: "Çekim teknikleri, poz ve sahne planlama",
     accent: "from-yellow-400 to-orange-400",
+  },
+  {
+    id: "video-yazilim",
+    title: "Video Yazılım Önerileri",
+    emoji: "🖥️",
+    description: "Kurgu, renk ve yazılım rehberleri",
+    accent: "from-neutral-300 to-yellow-400",
   },
 ];
 

@@ -8,7 +8,7 @@ export function NotePage() {
   const { slug } = useParams<{ slug: string }>();
   const meta = slug ? noteBySlug(slug) : undefined;
   const content = slug ? noteContent[slug] : undefined;
-  const primaryCategory = meta ? categoryById(meta.categoryIds[0]) : undefined;
+  const primaryCategory = meta?.categoryIds[0] ? categoryById(meta.categoryIds[0]) : undefined;
 
   if (!meta || !content) {
     return (
@@ -18,9 +18,11 @@ export function NotePage() {
     );
   }
 
+  const backHref = meta.categoryIds[0] ? `/category/${meta.categoryIds[0]}` : "/";
+
   return (
     <div className="flex-1 bg-nikon-black flex flex-col">
-      <Header title={meta.title} subtitle={primaryCategory?.title} back={`/category/${meta.categoryIds[0]}`} />
+      <Header title={meta.title} subtitle={primaryCategory?.title} back={backHref} />
       <div className="max-w-2xl w-full mx-auto px-4 py-5 flex-1">
         <MarkdownRenderer content={content} />
       </div>
