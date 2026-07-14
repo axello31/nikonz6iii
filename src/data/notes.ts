@@ -17,6 +17,7 @@ import ekipmanlarim from "../content/notes/ekipmanlarim.md?raw";
 import gimbalAfAyarlari from "../content/notes/gimbal-af-ayarlari-kamera-yapilandirma.md?raw";
 import sabitKadrajKlon from "../content/notes/sabit-kadraj-coklu-klon-videosu.md?raw";
 import efektEklemeAyarlari from "../content/notes/efekt-ekleme-ayarlari.md?raw";
+import hizRampasiSpeedRamp from "../content/notes/hiz-rampasi-speed-ramp.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -36,6 +37,7 @@ export const noteContent: Record<string, string> = {
   "gimbal-af-ayarlari-kamera-yapilandirma": gimbalAfAyarlari,
   "sabit-kadraj-coklu-klon-videosu": sabitKadrajKlon,
   "efekt-ekleme-ayarlari": efektEklemeAyarlari,
+  "hiz-rampasi-speed-ramp": hizRampasiSpeedRamp,
 };
 
 export const notes: NoteMeta[] = [
@@ -157,6 +159,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["video-yazilim"],
     summary: "FCP'de kuş sesi için pan/reverb/ducking (Space Designer, Range Selection) ve ateş sesi için Channel EQ/Limiter ayarları.",
     tags: ["ses efektleri", "reverb", "pan", "ducking", "space designer", "channel eq", "limiter", "ateş sesi", "kuş sesi", "fcp"],
+  },
+  {
+    slug: "hiz-rampasi-speed-ramp",
+    title: "Hız Rampası (Speed Ramp) Etkisi",
+    categoryIds: ["video-yazilim"],
+    summary: "FCP'de Blade Speed, Transition Handles ile akıcı hızlan-yavaşla geçişi ve Directional Blur ile motion blur ekleme adımları.",
+    tags: ["speed ramp", "hız rampası", "blade speed", "fcp", "transition handles", "motion blur", "orbit"],
   },
 ];
 
