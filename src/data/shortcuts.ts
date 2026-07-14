@@ -25,4 +25,12 @@ export const shortcuts: Shortcut[] = [
     href: "/manual/rg/rg-481",
     menuPath: ["MENU", "Özel Ayarlar Menüsü", "g: Video", "g5: AF Hızı"],
   },
+  {
+    id: "af-konu-algilanmadiginda",
+    title: "AF Konu Algılanmadığında",
+    subtitle: "Tam zamanlı AF'de seçili tür (insan/hayvan/araç) algılanamazsa kamera yine de odaklansın mı? Gimbal çekiminde KAPALI seçilmeli — odağın arka plana fırlamasını engeller.",
+    emoji: "🚫",
+    href: "/manual/rg/rg-355",
+    menuPath: ["MENU", "Video Kayıt Menüsü", "AF/MF Konu Algılama Seçenekleri", "AF Konu Algılanmadığında"],
+  },
 ];

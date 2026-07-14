@@ -2,4 +2,7 @@
 // callout at the end of the section instead of edited into the official text.
 export const manualNotes: Record<string, string[]> = {
   "rg-481": ["Sinematik etki için -2 ya da -3 değeri seçebilirsiniz."],
+  "rg-355": [
+    "Gimbal üzerinde hareketli çekimler yaparken bu ayarı kesinlikle [KAPALI] konumuna getirin — konu kadrajdan çıksa veya araya bir engel girse dahi odak son mesafede sabit kalır, arka plana fırlamaz.",
+  ],
 };
