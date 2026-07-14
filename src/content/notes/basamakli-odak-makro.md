@@ -55,6 +55,8 @@ Nesnenizin boyutuna ve derinliğine göre menüdeki **Çekim Sayısı** ve **Oda
 * **Çekim Sayısı (No. of shots):** **200 ile 300 çekim** arası seçilmelidir.
 * **Kullanım Mantığı:** Kamera o kadar minik odak adımları atar ki, nesnenin önünden arkasına ulaşabilmek için yüzlerce kare çekmek zorundadır. Çok resim çekmekten korkmayın; fazla kare göz çıkarmaz, yazılımlar flulukları ayıklayıp sadece en net yerleri seçecektir.
 
+**Nereden Başlamalı? (İlk Odak Noktası):** Odak kaydırma her zaman **size en yakın noktadan** başlar ve kamera odağı otomatik olarak **geriye, sonsuza doğru** kaydırır — siz elle geri kaydırmazsınız. Örneğin bir böcek çekiminde netlemeyi böceğin **size en yakın olan ucuna** (genellikle gözü veya anteninin ucu) yapın; çekim başladığında kamera oradan başlayıp böceğin gövdesi boyunca arkaya doğru ilerleyerek seriyi tamamlar. Yanlış uçtan (böceğin arkasından) başlarsanız kamera geri kalan mesafeyi değil, boşluğa doğru kaydırmaya devam eder ve seri işe yaramaz.
+
 **Saha Kurulumu Hatırlatması:** Sağlam bir tripod kullanın. Lens üzerindeki titreşim engelleyiciyi (**OS**) kesinlikle **OFF (Kapalı)** konumuna getirin. Odağı her zaman nesnenizin **en ön, kameraya en yakın olan ucuna** netleyip çekimi menüden **[Başlat]** diyerek başlatın. Fotoğraf makinesi her 2-3 saniyede bir netliği milim kaydırarak flaşla birlikte fotoğrafları tıkır tıkır çekecektir.
 
 ## 4. Adım: Bilgisayarda Birleştirme (Post-Production)
