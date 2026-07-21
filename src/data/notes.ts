@@ -19,6 +19,7 @@ import sabitKadrajKlon from "../content/notes/sabit-kadraj-coklu-klon-videosu.md
 import efektEklemeAyarlari from "../content/notes/efekt-ekleme-ayarlari.md?raw";
 import hizRampasiSpeedRamp from "../content/notes/hiz-rampasi-speed-ramp.md?raw";
 import whipPanCekimi from "../content/notes/whip-pan-cekimi.md?raw";
+import gunesAltindaVlogWaveform from "../content/notes/gunes-altinda-vlog-waveform.md?raw";
 
 export const noteContent: Record<string, string> = {
   "video-genel-ayarlari": videoGenelAyarlari,
@@ -40,6 +41,7 @@ export const noteContent: Record<string, string> = {
   "efekt-ekleme-ayarlari": efektEklemeAyarlari,
   "hiz-rampasi-speed-ramp": hizRampasiSpeedRamp,
   "whip-pan-cekimi": whipPanCekimi,
+  "gunes-altinda-vlog-waveform": gunesAltindaVlogWaveform,
 };
 
 export const notes: NoteMeta[] = [
@@ -175,6 +177,13 @@ export const notes: NoteMeta[] = [
     categoryIds: ["vlog-onerileri"],
     summary: "Görünmez sahne geçişi için whip-pan tekniği: çekim adımları ve RS5'te Sport Mode / PF+Fast+Low Deadband ayarları, M1/M2 profil önerisi.",
     tags: ["whip pan", "kırbaç hareketi", "gimbal", "rs5", "sahne geçişi", "pan follow", "deadband"],
+  },
+  {
+    slug: "gunes-altinda-vlog-waveform",
+    title: "Güneş Altında Vlog Çekim Ayarları ve Waveform Yorumlama",
+    categoryIds: ["vlog-onerileri"],
+    summary: "N-Log için hedef IRE değerleri (orta gri 40, cilt 45-55, highlight ≤70, gölge ≥5-10), waveform okuma ve ND/zebra ile saha iş akışı.",
+    tags: ["waveform", "n-log", "ire", "zebra", "pozlama", "güneş", "nd filtre", "histogram"],
   },
 ];
 
